@@ -292,41 +292,44 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 		$linkedin = '';
 		if($website != '')
 		{
-			$dataArray = meetYourCommenters_getRelMes($website);
-			if ( count($dataArray) > 0 ) 
+			if ( function_exists('meetYourCommenters_getRelMes') )
 			{
-				foreach ( $dataArray as $meURL ) 
+				$dataArray = meetYourCommenters_getRelMes($website);
+				if ( count($dataArray) > 0 ) 
 				{
-					//$retstring .= $meURL['url'] . ' | ';
-					if($meURL['type'] == 'internal')
+					foreach ( $dataArray as $meURL ) 
 					{
-						//echo "<li class='visitor-profile-" . $meURL['type'] . "'><img src=\"http://" . $meURL['host'] . "/favicon.ico\" alt=\"\" width=\"16\" height=\"16\" /><a href='" . $meURL['url'] . "'>" . $meURL['url'] . '[' . $meURL['type'] . ']' . "</a></li>";
-						//Find any twitter link
-						if(strpos($meURL['url'],'twitter') === false){
-						}
-						else{
-							$twitter = $meURL['url'];
-						}
-						
-						//Find any facebook link
-						if(strpos($meURL['url'],'facebook') === false){
-						}
-						else{
-							$facebook = $meURL['url'];
-						}
-						
-						//Find any flickr link
-						if(strpos($meURL['url'],'flickr') === false){
-						}
-						else{
-							$flickr = $meURL['url'];
-						}
+						//$retstring .= $meURL['url'] . ' | ';
+						if($meURL['type'] == 'internal')
+						{
+							//echo "<li class='visitor-profile-" . $meURL['type'] . "'><img src=\"http://" . $meURL['host'] . "/favicon.ico\" alt=\"\" width=\"16\" height=\"16\" /><a href='" . $meURL['url'] . "'>" . $meURL['url'] . '[' . $meURL['type'] . ']' . "</a></li>";
+							//Find any twitter link
+							if(strpos($meURL['url'],'twitter') === false){
+							}
+							else{
+								$twitter = $meURL['url'];
+							}
 							
-						//Find any linkedin link
-						if(strpos($meURL['url'],'linkedin') === false){
-						}
-						else{
-							$linkedin = $meURL['url'];
+							//Find any facebook link
+							if(strpos($meURL['url'],'facebook') === false){
+							}
+							else{
+								$facebook = $meURL['url'];
+							}
+							
+							//Find any flickr link
+							if(strpos($meURL['url'],'flickr') === false){
+							}
+							else{
+								$flickr = $meURL['url'];
+							}
+								
+							//Find any linkedin link
+							if(strpos($meURL['url'],'linkedin') === false){
+							}
+							else{
+								$linkedin = $meURL['url'];
+							}
 						}
 					}
 				}
