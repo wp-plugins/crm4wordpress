@@ -3,9 +3,9 @@
 Plugin Name: CRM4Wordpress
 Description: This integrates Wordpress with an instance of Batchbook, CRM software. Everytime someone leaves a comment on your site, a new record is created in batchbook with the contact details, related tags and categories of that post. You must first enable your <a href="../wp-admin/options-general.php?page=CRM4Wordpress">Settings</a> for the plugin to work.
 Author: <a href="http://www.maxrover.co.za">Max Rover Research</a> | <a href="../wp-admin/options-general.php?page=CRM4Wordpress">Settings</a>
-Version: 1.0
+Version: 1.1
 
-== CHANGELOG v1.0 ==
+== CHANGELOG v1.1 ==
 
 Support for Wordpress 2.7
 
