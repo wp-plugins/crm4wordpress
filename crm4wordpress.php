@@ -171,7 +171,7 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curl, CURLOPT_HEADER, true);
 		curl_setopt($curl, CURLOPT_TIMEOUT, 15);
-		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+		//curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($curl, CURLOPT_VERBOSE, true);		
 		$curl_response = curl_exec($curl);
 		$code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
@@ -241,7 +241,7 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curl, CURLOPT_HEADER, true);
 		curl_setopt($curl, CURLOPT_TIMEOUT, 15);
-		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+		//curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($curl, CURLOPT_VERBOSE, true);		
 		$curl_response = curl_exec($curl);
 		$code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
